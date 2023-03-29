@@ -3,7 +3,7 @@ use std::time::Instant;
 fn main() {
     loop {
         let start = Instant::now();
-        let _resp = reqwest::blocking::get("https://op.lsv-hessen.de");
+        let _resp = reqwest::blocking::get("https://example.com");
         let duration = start.elapsed();
         println!("{:?}", duration);
         match _resp {
